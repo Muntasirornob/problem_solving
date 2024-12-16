@@ -1,3 +1,26 @@
+# LeetCode 1: Two Sum
+
+# Example
+# Input: nums = [2, 7, 11, 15], target = 9  
+# Output: [0, 1] (Indices of the numbers that add up to the target)
+
+
+# Steps to Solve:
+# 1. **Initialize** an empty dictionary `num_dict`.  
+# 2. **Iterate** through each number in the array.  
+#    - Calculate the complement: `complement = target - num`.  
+#    - **Check** if the complement exists in `num_dict`.  
+#      - If yes: Return the indices of the complement and current number.  
+#      - Else: Add the number and its index to `num_dict`.  
+
+
+# **Basic Dictionary Operations (Python):**  
+# - Initialize: `demo_dict = {1: 3, 2: 2}`  
+# - Add key-value pair: `demo_dict[4] = 3`  
+# - Access values: `print(demo_dict[4])`  
+# - Output: `{1: 3, 2: 2, 4: 3}`  
+
+
 class Solution(object):
     def twoSum(self, nums, target):
         """

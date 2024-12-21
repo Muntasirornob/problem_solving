@@ -4,6 +4,15 @@
 #         self.val = val
 #         self.next = next
 
+
+# Create a dummy node and initialize a pointer merged_node.
+# Compare list1 and list2 values:
+# Attach the smaller value to merged_node.next.
+# Move the pointer of the selected list and merged_node.
+# Attach the remaining nodes of the non-empty list to merged_node.next.
+# Return dummy_node.next.
+
+
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         """
